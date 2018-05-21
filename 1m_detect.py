@@ -10,6 +10,8 @@ block_sites = _1m_file.readlines()
 b_sites = []
 for site in block_sites:
     b_sites.append(site.splitlines()[0])
+    
+_1m_file.close()
 
 def binary_search(target, data):
     start = 0
